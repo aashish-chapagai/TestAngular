@@ -22,10 +22,12 @@
 #flex {
     display: flex;
     flex-direction: row;
-    margin: 0 1em 0 1em;
+    margin: 0 1em 3em 1em;
 }
 #flexleft {
     margin-top: 3em;
+    margin-bottom: 3em;
+    height: auto;
     flex-basis: 50%;
     position: relative;
 }

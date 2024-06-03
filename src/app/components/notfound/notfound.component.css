@@ -2,6 +2,16 @@ div {
     text-align: center;
 }
 img {
-    width: 20em;
-    height: 10em;
+    width: 40em;
+    height: 20em;
+}
+h1 {
+    font-size: 2.5em;
+}
+button {
+    background: transparent;
+    font-size: 1.2em;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
 }
