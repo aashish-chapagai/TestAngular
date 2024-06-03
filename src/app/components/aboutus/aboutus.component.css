@@ -1,3 +1,52 @@
-div {
+#container {
     margin-top: 10vh;
+}
+#title {
+    margin: 0 0.8em 0 0.8em;
+    height: 15em;
+    border-radius: 1.5em;
+    background-image: url('../../../../public/assets/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#title > h1 {
+    margin: 0;
+    margin-left: 1em;
+    position: absolute;
+    top: 50%;
+    font-size: 3em;
+    transform: translateY(-50%);
+    color: white;
+}
+#flex {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1em 0 1em;
+}
+#flexleft {
+    margin-top: 3em;
+    flex-basis: 50%;
+    position: relative;
+}
+#image1 {
+    position: absolute;
+    top: 2.5em;
+    z-index: 1;
+    left: 33%;
+    transform: translateX(-50%) rotate(-15deg);
+    width: 13em;
+    height: 21em;
+    border-radius: 1.5em;
+}
+#image2 {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 15em;
+    border-radius: 1.5em;
+    height: 25em;
+}
+p {
+    flex-basis: 50%;
 }
