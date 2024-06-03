@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    height: 10vh;
+    background-color: #D1D8C5;
+}
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.1em;
+}
