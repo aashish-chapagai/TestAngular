@@ -18,7 +18,7 @@ export class MoviesService {
   }
   Movies: Movie[] = []
   getMoviesFromAPI() {
-    this.http.get("https://movies-api14.p.rapidapi.com/shows",
+    this.http.get("https://movies-api14.p.rapidapi.com/movies",
     {
       headers: {
         'X-RapidAPI-Key': '3d37455d5emsh2f63493fbc688f5p178ab1jsne3addcc9261b',

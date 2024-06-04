@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MoviesService } from '../../movies.service';
 import { Movie } from '../../movie';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { __values } from 'tslib';
 import { HeaderComponent } from '../header/header.component';
 import { CommonModule } from '@angular/common';
@@ -25,7 +25,7 @@ export class MoviesdetailsComponent {
     genre: '',
     description: ''
   }
-  constructor(private moviesservice: MoviesService, private route: ActivatedRoute) {
+  constructor(private moviesservice: MoviesService, private route: ActivatedRoute, private router: Router) {
     this.Movies = this.moviesservice.getMoviesFromAPI()
     this.routeobj = this.route.params
     this.movieid = this.routeobj._value['movie.id']
@@ -42,5 +42,8 @@ export class MoviesdetailsComponent {
         }
       }
     })
+  }
+  goBack() {
+    this.router.navigate([""])
   }
 }

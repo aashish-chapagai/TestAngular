@@ -4,9 +4,13 @@
         <img [src]="Movie.image" alt="{{Movie.name}}">
     </div>
     <div id="details">
+        <button (click)="goBack()">Back</button>
         <h1>{{Movie.name}}</h1>
+        <p>Genres:</p>
         <ul>
           <li *ngFor="let genre of Movie.genre">{{genre}}</li>
         </ul>
+        <p id="release">{{Movie.date}}</p>
+        <p>{{Movie.description}}</p>
     </div>
 </div>
