@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 
 @Component({
@@ -8,6 +8,6 @@ import { HeaderComponent } from '../header/header.component';
   templateUrl: './aboutus.component.html',
   styleUrl: './aboutus.component.css'
 })
-export class AboutusComponent {
-  
+export class AboutusComponent{
+
 }
