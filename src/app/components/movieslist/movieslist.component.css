@@ -6,14 +6,42 @@
 }
 #moviecontainer {
     margin-top: 2em;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
+    position: relative;
     width: 18em;
-    height: 26em;
-    border: 1px solid black;
+    height: 25em;
+    border: 2px solid black;
+    border-radius: 1.5em;
     text-align: center;
 }
 #moviecontainer > img {
     width: 18em;
     height: 18em;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+h5 {
+    font-size: 1.2em;
+    margin: 0.1em 0 0 0;
+    padding: 0 1em 0 1em;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+button {
+    margin: 0;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 0.4em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+p {
+    margin: 0;
+    font-size: 0.8em;
+    color: gray;
 }

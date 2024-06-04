@@ -29,7 +29,6 @@ export class MoviesdetailsComponent {
     this.Movies = this.moviesservice.getMoviesFromAPI()
     this.routeobj = this.route.params
     this.movieid = this.routeobj._value['movie.id']
-    console.log(this.movieid)
     this.Movies.forEach(movie => {
       if (movie.id == this.movieid) {
         this.Movie = {

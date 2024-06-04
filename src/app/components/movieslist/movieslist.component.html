@@ -1,7 +1,7 @@
 <div id="moviescontainer">
     <div id="moviecontainer" *ngFor="let movie of Movies">
         <img [src]="movie.image" alt="{{movie.name}}">
-        <h3>{{movie.name}}</h3>
+        <h5>{{movie.name}}</h5>
         <p>{{movie.date}}</p>
         <button (click)="openMovie(movie)">View Details</button>
     </div>

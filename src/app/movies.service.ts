@@ -36,7 +36,7 @@ export class MoviesService {
       this.eachMovie.id = movie._id
       this.eachMovie.name = movie.original_title
       this.eachMovie.image = movie.poster_path
-      this.eachMovie.date = movie.first_aired
+      this.eachMovie.date = movie.release_date
       this.eachMovie.genre = movie.genres
       this.eachMovie.description = movie.overview
       this.Movies.push(this.eachMovie)
