@@ -1,0 +1,17 @@
+#moviescontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#moviecontainer {
+    margin-top: 2em;
+    width: 18em;
+    height: 26em;
+    border: 1px solid black;
+    text-align: center;
+}
+#moviecontainer > img {
+    width: 14em;
+    height: 15em;
+}

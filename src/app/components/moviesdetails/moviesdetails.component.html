@@ -1,1 +1,12 @@
-<p>moviesdetails works!</p>
+<app-header></app-header>
+<div id="container">
+    <div id="image">
+        <img [src]="Movie.image" alt="{{Movie.name}}">
+    </div>
+    <div id="details">
+        <h1>{{Movie.name}}</h1>
+        <ul>
+          <li *ngFor="let genre of Movie.genre">{{genre}}</li>
+        </ul>
+    </div>
+</div>

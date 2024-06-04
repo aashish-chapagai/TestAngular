@@ -1,1 +1,8 @@
-<p>movieslist works!</p>
+<div id="moviescontainer">
+    <div id="moviecontainer" *ngFor="let movie of Movies">
+        <img [src]="movie.image" alt="{{movie.name}}">
+        <h3>{{movie.name}}</h3>
+        <p>{{movie.date}}</p>
+        <button (click)="openMovie(movie)">View Details</button>
+    </div>
+</div>
