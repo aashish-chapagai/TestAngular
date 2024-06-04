@@ -6,6 +6,7 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { MoviesdetailsComponent } from './components/moviesdetails/moviesdetails.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { authguardGuard } from './authguard.guard';
 
 export const routes: Routes = [
     {
@@ -23,7 +24,8 @@ export const routes: Routes = [
     },
     {
         path : "home",
-        component: HomeComponent
+        component: HomeComponent,
+        canActivate: [authguardGuard]
     },
     {
         path : "aboutus",
@@ -31,11 +33,13 @@ export const routes: Routes = [
     }, 
     {
         path : "contactus",
-        component: ContactusComponent
+        component: ContactusComponent,
+        canActivate: [authguardGuard]
     }, 
     {
         path : "details/:movie.id",
-        component: MoviesdetailsComponent
+        component: MoviesdetailsComponent,
+        canActivate: [authguardGuard]
     }, 
     {
         path : "**",
