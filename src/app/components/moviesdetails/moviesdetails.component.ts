@@ -43,6 +43,6 @@ export class MoviesdetailsComponent {
     })
   }
   goBack() {
-    this.router.navigate([""])
+    this.router.navigate(["home"])
   }
 }

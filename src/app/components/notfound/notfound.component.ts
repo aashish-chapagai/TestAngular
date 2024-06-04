@@ -13,6 +13,6 @@ export class NotfoundComponent {
 
   }
   openHome() {
-    this.router.navigate([""])
+    this.router.navigate(["home"])
   }
 }

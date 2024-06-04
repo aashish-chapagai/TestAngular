@@ -17,7 +17,7 @@ export class HeaderComponent{
     this.router.navigate(["aboutus"])
   }
   openHome() {
-    this.router.navigate([''])
+    this.router.navigate(['home'])
   }
   openContact() {
     this.router.navigate(['contactus'])
