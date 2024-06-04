@@ -7,11 +7,11 @@ header {
     width: 100%;
     align-items: center;
     height: 10vh;
-    background-color: #F0EBE3;
+    background-color: #323232;
 }
 button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
