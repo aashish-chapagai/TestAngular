@@ -5,7 +5,7 @@
     margin: 0 0.8em 0 0.8em;
     height: 15em;
     border-radius: 1.5em;
-    background-image: url('../../../../public/assets/about.jpg');
+    background-image: url('../../../../public/assets/about.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -22,7 +22,9 @@
 #flex {
     display: flex;
     flex-direction: row;
+    min-height: 27.5em;
     margin: 0 1em 3em 1em;
+    margin-bottom: 3em;
 }
 #flexleft {
     margin-top: 3em;
