@@ -1,18 +1,21 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <div>
-        <label for="email">Email</label>
-        <input id="email" type="email" formControlName="email" />
-        <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
-            <p style="color: red;">Email is required</p>
+<div id="container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <h1>Login</h1>
+        <div>
+            <label for="email">Email</label><br>
+            <input id="email" type="email" formControlName="email" />
+            <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+                <p style="color: red;">Email is required</p>
+            </div>
         </div>
-    </div>
-    <div>
-        <label for="password">Password</label>
-        <input id="password" type="password" formControlName="password" />
-        <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
-            <p style="color: red;">Password is required</p>
+        <div>
+            <label for="password">Password</label><br>
+            <input id="password" type="password" formControlName="password" />
+            <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+                <p style="color: red;">Password is required</p>
+            </div>
         </div>
-    </div>
-    <button type="submit" [disabled]="loginForm.invalid">Login</button>
-  </form>  
-  <p id="text">Not a User?</p><button (click)="register()" id="register">Register</button>
+        <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    </form>  
+    <p id="text">Not a User?</p><button (click)="register()" id="register">Register</button>
+</div>
