@@ -1,5 +1,6 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../../authservice.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent{
   @Input() active: String = "Home";
-  constructor(private router: Router) {
+  constructor(private router: Router, private authService: AuthService) {
     
   }
   openAbout() {
@@ -21,5 +22,8 @@ export class HeaderComponent{
   }
   openContact() {
     this.router.navigate(['contactus'])
+  }
+  logout() {
+    this.authService.logout()
   }
 }

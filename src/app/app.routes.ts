@@ -29,7 +29,8 @@ export const routes: Routes = [
     },
     {
         path : "aboutus",
-        component: AboutusComponent
+        component: AboutusComponent,
+        canActivate: [authguardGuard]
     }, 
     {
         path : "contactus",
