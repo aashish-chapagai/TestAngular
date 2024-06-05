@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
-import { ContactusComponent } from './components/contactus/contactus.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { MoviesdetailsComponent } from './components/moviesdetails/moviesdetails.component';
@@ -30,11 +29,6 @@ export const routes: Routes = [
     {
         path : "aboutus",
         component: AboutusComponent,
-        canActivate: [authguardGuard]
-    }, 
-    {
-        path : "contactus",
-        component: ContactusComponent,
         canActivate: [authguardGuard]
     }, 
     {

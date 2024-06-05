@@ -20,9 +20,6 @@ export class HeaderComponent{
   openHome() {
     this.router.navigate(['home'])
   }
-  openContact() {
-    this.router.navigate(['contactus'])
-  }
   logout() {
     this.authService.logout()
   }
